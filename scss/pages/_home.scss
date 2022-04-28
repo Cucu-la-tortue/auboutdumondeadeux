@@ -1,0 +1,156 @@
+.hero {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3) url('./../../public/assets/background_header.jpg') no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__quote {
+        //margin-bottom: 2rem;
+    
+
+        h1 {
+            font-style: italic;
+            text-align: center;
+            font-size: 4rem;
+            font-weight: 600;
+        }
+
+        h5 {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__location {
+        margin-bottom: 2rem;
+        span {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            transition: color .2s;
+
+            &:hover {
+                color: #ffa500;
+                transition: color .2s;
+            }
+
+            i {
+                font-size: .8rem;
+                padding: 1rem;
+                border-radius: 2rem;
+                background-color: $dark-blue;
+            }
+
+            a {
+                font-weight: 600;
+                transition: color .2s;
+            }
+        }
+    }
+}
+
+
+
+// Used for about and preparations sections
+.section__content {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+    h3 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: $orange;
+        margin-bottom: .5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    em {
+        font-weight: 600;
+    }
+
+    strong {
+        font-weight: 800;
+        color: $orange;
+    }
+
+    span {
+        margin-top: 1rem;
+        align-self: center;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+}
+
+
+
+
+// About section
+.about {
+    display: flex;
+    gap: 2rem;
+    padding-top: 8rem;
+    align-items: center;
+
+    aside {
+        width: 100vw;
+    }
+
+    .section__content {
+        text-align: right;
+    }
+}
+
+
+
+
+// Preparations section
+.preparations {
+    display: flex;
+    gap: 2rem;
+    padding-top: 12rem;
+    align-items: center;
+    margin-bottom: 16rem;
+
+    aside {
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+        
+        img {
+            object-fit: contain;
+            max-width: calc(50% - 1rem);
+        }
+
+        :nth-child(1) {
+            margin-bottom: 2rem;
+        }
+
+        :nth-child(2) {
+            margin-top: 2rem;
+        }
+    }
+
+    .section__content {
+        text-align: left;
+
+        a {
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+    }
+}

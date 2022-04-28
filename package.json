@@ -1,7 +1,7 @@
 {
-  "name": "starter-project",
+  "name": "au-bout-du-monde-a-deux",
   "version": "1.0.0",
-  "description": "Starter-project with scss, partials, and a base structure that I use to quickly build websites.",
+  "description": "Travel blog",
   "main": "index.html",
   "scripts": {
     "start": "sass --watch ./scss/main.scss:./public/css/style.css",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cucu-la-tortue/starter-project.git"
+    "url": "git+https://github.com/Cucu-la-tortue/auboutdumondeadeux.git"
   },
   "author": "Cucu",
   "license": "ISC",
   "browserslist": "last 4 versions",
   "bugs": {
-    "url": "https://github.com/Cucu-la-tortue/starter-project/issues"
+    "url": "https://github.com/Cucu-la-tortue/auboutdumondeadeux/issues"
   },
-  "homepage": "https://github.com/Cucu-la-tortue/starter-project#readme"
+  "homepage": "https://github.com/Cucu-la-tortue/auboutdumondeadeux#readme"
 }

@@ -1,0 +1,53 @@
+// Base
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-base;
+}
+
+
+
+// Containers
+.container {
+    padding: 0 5vw;
+}
+
+.image-container {
+    overflow: hidden;
+
+    &--scale {
+        img {
+            transition: transform 1s ease;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: transform 1s ease;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+// Titles
+h1 {
+    font-family: $font-heading;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: $font-heading;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: $font-heading-2;
+    font-weight: 600;
+}
+
+h5 {
+    font-family: $font-heading-2;
+}

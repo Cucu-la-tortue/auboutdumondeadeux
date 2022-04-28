@@ -1,0 +1,17 @@
+.btn {
+    padding: 1rem 2rem;
+    width: fit-content;
+    background-color: $orange;
+    color: #fff;
+    border: 2px solid $orange;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color .2s;
+
+    &:hover {
+        color: $orange;
+        background-color: transparent;
+        transition: background-color .2s;
+    }
+}

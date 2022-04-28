@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+
+    &__navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-align: center;
+            max-width: 240px;
+            margin-right: 2rem;
+            text-transform: uppercase;
+        }
+
+        li a {
+            font-weight: 600;
+            color: $light-gray;
+            transition: color .2s;
+
+            &:hover {
+                color: $orange;
+                transition: color .2s;
+            }
+        }
+    }
+
+    &__social {
+        a {
+            font-size: 1.6rem;
+            color: $light-gray;
+            transition: color .2s;
+
+            &:hover {
+                color: $orange;
+                transition: color .2s;
+            }
+        }
+    }
+}
+

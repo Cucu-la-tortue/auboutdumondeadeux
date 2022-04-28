@@ -1,0 +1,86 @@
+.footer {
+    color: $dark-gray;
+    background-color: $footer-color;
+    margin-top: 5rem;
+
+    &__title {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        //gap: 10rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+
+        .footer__instagram {
+            width: 40%;
+
+            .footer__gallery {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: .5rem;
+            }
+        }
+
+        .footer__follow {
+            width: 30%;
+
+            .footer__social {
+                margin-top: 1rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 3rem;
+                font-size: .9rem;
+
+                li a {
+                    color: #fff;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: .3rem;
+                    transition: color .2s;
+
+                    &:hover {
+                        color: #ffa500;
+                        transition: color .2s;
+                    }
+
+                    i {
+                        font-size: 1.2rem;
+                        vertical-align: center;
+                    }
+                }
+            }
+        }
+
+        .footer__move-up {
+            position: absolute;
+            top: 50%;
+            right: 3%;
+            color: #fff;
+            transition: color .2s;
+
+            &:hover {
+                cursor: pointer;
+                color: $orange;
+                transition: color .2s;
+            }
+        }
+
+        .footer__title {
+            font-size: 1.8rem;
+            color: #fff;
+        }
+    }
+
+    &__copyrights {
+        text-align: center;
+        padding: 1rem;
+    }
+}
