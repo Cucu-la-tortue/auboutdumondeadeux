@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 8rem;
 
     &__quote {
         //margin-bottom: 2rem;
@@ -22,6 +23,35 @@
         h5 {
             text-align: center;
             font-size: 1.2rem;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        align-self: center;
+        margin-bottom: 2rem;
+        background: none;
+        transition: padding 500ms ease;
+        color: $orange;
+
+        &:hover {
+            padding-left: 4rem;
+            transition: padding 500ms ease;
+
+            .btn-arrow {
+                opacity: 1;
+                transition: all 500ms ease;
+                transform: translate3d(20px, 0, 0);
+            }
+        }
+
+        .btn-arrow {
+            position: absolute;
+            font-size: 1.5rem;
+            opacity: 0;
+            left: 0;
+            transition: all 500ms ease;
+            margin-top: 1px;
         }
     }
 
@@ -56,81 +86,78 @@
 
 
 
-// Used for about and preparations sections
-.section__content {
+// Sections
+.section {
     display: flex;
-    flex-direction: column;
-    height: fit-content;
+    gap: 2rem;
+    align-items: center;
+    padding-bottom: 12rem;
 
-    h3 {
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        color: $orange;
-        margin-bottom: .5rem;
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            color: $orange;
+            margin-bottom: .5rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+            line-height: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        em {
+            font-weight: 600;
+        }
+
+        strong {
+            font-weight: 800;
+            color: $orange;
+        }
+
+        span {
+            margin-top: 1rem;
+            align-self: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        a {
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
     }
 
-    h2 {
-        font-size: 3rem;
-        line-height: 3rem;
-        margin-bottom: 2rem;
-    }
-
-    p {
-        margin-bottom: 1rem;
-    }
-
-    em {
-        font-weight: 600;
-    }
-
-    strong {
-        font-weight: 800;
-        color: $orange;
-    }
-
-    span {
-        margin-top: 1rem;
-        align-self: center;
-        font-size: 1.1rem;
-        font-weight: 600;
+    aside {
+        width: 100vw;
     }
 }
-
 
 
 
 // About section
 .about {
-    display: flex;
-    gap: 2rem;
-    padding-top: 8rem;
-    align-items: center;
-
-    aside {
-        width: 100vw;
-    }
-
-    .section__content {
-        text-align: right;
-    }
+    text-align: right;
 }
-
-
 
 
 // Preparations section
 .preparations {
-    display: flex;
-    gap: 2rem;
-    padding-top: 12rem;
-    align-items: center;
-    margin-bottom: 16rem;
+    text-align: left;
 
     aside {
         display: flex;
         gap: 2rem;
-        width: 100%;
-        
+
         img {
             object-fit: contain;
             max-width: calc(50% - 1rem);
@@ -139,17 +166,7 @@
         :nth-child(1) {
             margin-bottom: 2rem;
         }
-
         :nth-child(2) {
-            margin-top: 2rem;
-        }
-    }
-
-    .section__content {
-        text-align: left;
-
-        a {
-            margin: 0 auto;
             margin-top: 2rem;
         }
     }

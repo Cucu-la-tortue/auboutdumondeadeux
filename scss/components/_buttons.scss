@@ -1,5 +1,6 @@
 .btn {
-    padding: 1rem 2rem;
+    display: block;
+    padding: .9rem 1.8rem;
     width: fit-content;
     background-color: $orange;
     color: #fff;
@@ -8,6 +9,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     transition: background-color .2s;
+    cursor: pointer;
 
     &:hover {
         color: $orange;

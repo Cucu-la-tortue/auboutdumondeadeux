@@ -20,6 +20,7 @@
         }
 
         li a {
+            position: relative;
             font-weight: 600;
             color: $light-gray;
             transition: color .2s;
@@ -27,6 +28,28 @@
             &:hover {
                 color: $orange;
                 transition: color .2s;
+            }
+
+            // Underline
+            &::after {
+                display: block;
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                left: 5%;
+                width: 90%;
+                height: 0.1em;
+                margin: 0 auto;
+                background-color: $orange;
+                opacity: 1;
+                transform: scale(0);
+                transform-origin: center;
+                transition: opacity 300ms, transform 300ms;
+            }
+
+            // Scale from center
+            &:hover::after {
+                transform: scale(1);
             }
         }
     }
