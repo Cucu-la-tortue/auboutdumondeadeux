@@ -561,7 +561,8 @@ strong {
 }
 
 .countries {
-  margin-bottom: 10rem;
+  width: 90%;
+  margin: 0 auto 10rem auto;
   font-size: 1.1rem;
 }
 .countries h2 {
