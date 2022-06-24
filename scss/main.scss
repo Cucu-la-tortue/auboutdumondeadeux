@@ -3,6 +3,8 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
+@import "./utils/emojis";
+@import "./utils/animations";
 
 
 
@@ -25,11 +27,17 @@
 /* --------- Layouts --------- */
 @import "./layouts/header";
 @import "./layouts/footer";
+@import "./layouts/hero";
 
 
 
 /* ---------- Pages ---------- */
 @import "./pages/home";
+@import "./pages/route";
+@import "./pages/prep";
+@import "./pages/challenges";
+@import "./pages/countries";
+
 
 
 

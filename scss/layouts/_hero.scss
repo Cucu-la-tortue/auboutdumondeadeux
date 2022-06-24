@@ -1,0 +1,102 @@
+.hero {
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+
+    &__quote {    
+        h1 {
+            font-style: italic;
+            text-align: center;
+            font-size: 4rem;
+            font-weight: 600;
+        }
+
+        h5 {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        align-self: center;
+        margin-bottom: 2rem;
+        background: none;
+        transition: padding 500ms ease;
+        color: $orange;
+
+        &:hover {
+            padding-left: 4rem;
+            transition: padding 500ms ease;
+
+            .btn-arrow {
+                opacity: 1;
+                transition: all 500ms ease;
+                transform: translate3d(20px, 0, 0);
+            }
+        }
+
+        .btn-arrow {
+            position: absolute;
+            font-size: 1.5rem;
+            opacity: 0;
+            left: 0;
+            transition: all 500ms ease;
+            margin-top: 1px;
+        }
+    }
+
+    &__scroll-arrow {
+        position: relative;
+        align-self: center;
+
+        span {
+            display: block;
+            width: 25px;
+            height: 25px;
+            border-bottom: 2px solid white;
+            border-right: 2px solid white;
+            transform: rotate(45deg);
+            margin: -10px;
+            animation: scroll-down 2s infinite;
+
+            &:nth-child(2) {
+                animation-delay: -0.2s;
+            }
+            &:nth-child(3) {
+                animation-delay: -0.4s;
+            }
+        }
+    }
+
+    &__location {
+        margin-bottom: 2rem;
+        span {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            transition: color .2s;
+
+            &:hover {
+                color: #ffa500;
+                transition: color .2s;
+            }
+
+            i {
+                font-size: .8rem;
+                padding: 1rem;
+                border-radius: 2rem;
+                background-color: $dark-blue;
+            }
+
+            a {
+                font-weight: 600;
+                transition: color .2s;
+            }
+        }
+    }
+}

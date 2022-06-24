@@ -19,7 +19,7 @@
             text-transform: uppercase;
         }
 
-        li a {
+        .header__nav-link a {
             position: relative;
             font-weight: 600;
             color: $light-gray;
@@ -49,6 +49,26 @@
 
             // Scale from center
             &:hover::after {
+                transform: scale(1);
+            }
+        }
+
+        .active a {
+            position: relative;
+            font-weight: 600;
+            color: $orange;
+            transition: color .2s;
+
+            &::after {
+                display: block;
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                left: 5%;
+                width: 90%;
+                height: 0.1em;
+                margin: 0 auto;
+                background-color: $orange;
                 transform: scale(1);
             }
         }

@@ -1,0 +1,11 @@
+@counter-style admin {
+    system: cyclic;
+    symbols: $car $vote $work $insurance $bank $phone $house $energy;
+    suffix: " ";
+}
+
+@counter-style health {
+    system: cyclic;
+    symbols: $vaccine;
+    suffix: " ";
+}

@@ -1,5 +1,28 @@
 @charset "UTF-8";
 /* ---------- Utils ---------- */
+@counter-style admin {
+  system: cyclic;
+  symbols: "🚗" "🗳" "💼" "📋" "🏦" "📞" "🏠" "💡";
+  suffix: " ";
+}
+@counter-style health {
+  system: cyclic;
+  symbols: "💉";
+  suffix: " ";
+}
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
 /* --------- Vendors --------- */
 /* ---------- Base ----------- */
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
@@ -23,7 +46,7 @@ html {
 }
 
 html, body, nav, header, footer, div, span,
-h1, h2, h3, p,
+h1, h2, h3, h4, h5, h6, p,
 a, img,
 ul, li,
 table, form, label, input, textarea, select, button {
@@ -112,14 +135,14 @@ body {
   padding: 0 5vw;
 }
 
-.image-container {
+.img-scale {
   overflow: hidden;
 }
-.image-container--scale img {
+.img-scale img {
   transition: transform 1s ease;
 }
-.image-container--scale img:hover {
-  transform: scale(1.2);
+.img-scale img:hover {
+  transform: scale(1.1);
   transition: transform 1s ease;
   cursor: pointer;
 }
@@ -141,6 +164,15 @@ h3 {
 
 h5 {
   font-family: "Raleway", sans-serif;
+}
+
+em {
+  font-weight: 600;
+}
+
+strong {
+  font-weight: bold;
+  color: #f1863b;
 }
 
 /* -------- Components ------- */
@@ -184,17 +216,17 @@ h5 {
   margin-right: 2rem;
   text-transform: uppercase;
 }
-.header__navbar li a {
+.header__navbar .header__nav-link a {
   position: relative;
   font-weight: 600;
   color: #d3d3d3;
   transition: color 0.2s;
 }
-.header__navbar li a:hover {
+.header__navbar .header__nav-link a:hover {
   color: #f1863b;
   transition: color 0.2s;
 }
-.header__navbar li a::after {
+.header__navbar .header__nav-link a::after {
   display: block;
   content: "";
   position: absolute;
@@ -209,7 +241,25 @@ h5 {
   transform-origin: center;
   transition: opacity 300ms, transform 300ms;
 }
-.header__navbar li a:hover::after {
+.header__navbar .header__nav-link a:hover::after {
+  transform: scale(1);
+}
+.header__navbar .active a {
+  position: relative;
+  font-weight: 600;
+  color: #f1863b;
+  transition: color 0.2s;
+}
+.header__navbar .active a::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 5%;
+  width: 90%;
+  height: 0.1em;
+  margin: 0 auto;
+  background-color: #f1863b;
   transform: scale(1);
 }
 .header__social a {
@@ -225,11 +275,11 @@ h5 {
 .footer {
   color: rgba(104, 102, 102, 0.8549019608);
   background-color: #0f0f0f;
-  margin-top: 5rem;
 }
 .footer__title {
   font-size: 1.4rem;
   margin-bottom: 1rem;
+  line-height: normal;
 }
 .footer__container {
   position: relative;
@@ -295,12 +345,8 @@ h5 {
   padding: 1rem;
 }
 
-/* ---------- Pages ---------- */
 .hero {
   height: 100vh;
-  background: rgba(0, 0, 0, 0.3) url("./../../public/assets/background_header.jpg") no-repeat;
-  background-size: cover;
-  background-blend-mode: darken;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -342,6 +388,26 @@ h5 {
   transition: all 500ms ease;
   margin-top: 1px;
 }
+.hero__scroll-arrow {
+  position: relative;
+  align-self: center;
+}
+.hero__scroll-arrow span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: scroll-down 2s infinite;
+}
+.hero__scroll-arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.hero__scroll-arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
 .hero__location {
   margin-bottom: 2rem;
 }
@@ -367,11 +433,19 @@ h5 {
   transition: color 0.2s;
 }
 
+/* ---------- Pages ---------- */
+.hero--home {
+  background: rgba(0, 0, 0, 0.3) url("./../../public/assets/background_header.jpg") no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
 .section {
   display: flex;
   gap: 2rem;
   align-items: center;
   padding-bottom: 12rem;
+  text-align: right;
 }
 .section__content {
   display: flex;
@@ -391,13 +465,6 @@ h5 {
 .section__content p {
   margin-bottom: 1rem;
 }
-.section__content em {
-  font-weight: 600;
-}
-.section__content strong {
-  font-weight: 800;
-  color: #f1863b;
-}
 .section__content span {
   margin-top: 1rem;
   align-self: center;
@@ -410,29 +477,388 @@ h5 {
   margin-top: 1rem;
 }
 .section aside {
-  width: 100vw;
+  width: 100%;
 }
-
-.about {
-  text-align: right;
-}
-
-.preparations {
+.section--prep {
   text-align: left;
 }
-.preparations aside {
+.section--prep aside {
   display: flex;
   gap: 2rem;
 }
-.preparations aside img {
+.section--prep aside img {
   object-fit: contain;
   max-width: calc(50% - 1rem);
 }
-.preparations aside :nth-child(1) {
+.section--prep aside :nth-child(1) {
   margin-bottom: 2rem;
 }
-.preparations aside :nth-child(2) {
+.section--prep aside :nth-child(2) {
   margin-top: 2rem;
+}
+
+.hero--route {
+  background: rgba(0, 0, 0, 0.3) url("./../../public/assets/background_header_4.jpg") no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.route h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.route__map {
+  margin-bottom: 15rem;
+  display: flex;
+  flex-flow: row-reverse;
+}
+.route__map .map__image {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.route__map .map__image path {
+  fill: #d3d3d3;
+}
+.route__map .map__image .visited path {
+  fill: #a4ced2;
+  transition: fill 0.3s;
+}
+.route__map .map__image .current path {
+  fill: #5960b5;
+  transition: fill 0.3s;
+}
+.route__map .map__image .is-active path {
+  fill: #f1863b;
+  stroke: #fff;
+  transition: fill 0.3s;
+}
+.route__map .map__list {
+  margin-right: 4rem;
+}
+.route__map .map__list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.route__map .map__list ul li {
+  display: flex;
+}
+.route__map .map__list ul li img {
+  width: 32px;
+  margin-right: 2rem;
+}
+.route__map .map__list a {
+  transition: color 0.3s;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.route__map .map__list a.current {
+  color: #5960b5;
+}
+.route__map .map__list a.is-active {
+  color: #f1863b;
+}
+
+.countries {
+  margin-bottom: 10rem;
+  font-size: 1.1rem;
+}
+.countries h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.countries .countries__text {
+  margin-bottom: 5rem;
+}
+.countries .countries__image {
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+}
+.countries .countries__image img {
+  margin-bottom: 2rem;
+}
+.countries .countries__image span {
+  font-family: "Pinyon Script", cursive;
+  font-size: 2.5rem;
+}
+
+.hero--prep {
+  background: rgba(0, 0, 0, 0.3) url("./../../public/assets/background_header_2.jpg") no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.prep {
+  margin-bottom: 10rem;
+  font-size: 1.1rem;
+}
+.prep h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.prep h3 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: #f1863b;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.prep ul {
+  margin-top: 0.5rem;
+  margin-left: 4rem;
+}
+.prep ul li {
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+.prep__admin-list li {
+  list-style-type: admin;
+}
+.prep__health-list {
+  margin-bottom: 1rem;
+}
+.prep__health-list li {
+  list-style-type: health;
+}
+.prep__equipment {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  text-align: left;
+}
+.prep__equipment .equipment__img {
+  display: flex;
+  gap: 2rem;
+  width: 100vw;
+}
+.prep__equipment .equipment__img img {
+  object-fit: contain;
+  max-width: calc(50% - 1rem);
+}
+.prep__equipment .equipment__img :nth-child(1) {
+  margin-bottom: 2rem;
+}
+.prep__equipment .equipment__img :nth-child(2) {
+  margin-top: 2rem;
+}
+
+.hero--challenges {
+  background: rgba(0, 0, 0, 0.3) url("./../../public/assets/background_header_3.jpg") no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.challenges {
+  margin-bottom: 10rem;
+  font-size: 1.1rem;
+}
+.challenges h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.challenges ul {
+  margin: 2rem auto 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.challenges ul li {
+  list-style-type: challenges;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.challenges ul li i {
+  font-size: 1.4rem;
+}
+.challenges ul li .fa-hourglass {
+  color: rgba(104, 102, 102, 0.8549019608);
+}
+.challenges ul .challenge-done {
+  color: green;
+}
+.challenges ul .challenge-done span {
+  font-style: italic;
+  font-weight: 600;
+  color: green;
+}
+
+.hero--country h1 {
+  font-size: 5rem;
+}
+
+.map-section {
+  margin-bottom: 8rem;
+}
+.map-section h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.map-section #map {
+  width: 85vw;
+  height: 85vh;
+  margin: auto;
+  border-radius: 1rem;
+}
+.map-section #map .infoWindow {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.map-section #map .infoWindow .infoWindow__heading {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f1863b;
+  margin-bottom: 0.3rem;
+}
+.map-section #map .infoWindow .infoWindow__days {
+  font-weight: 500;
+  text-align: center;
+}
+
+.logbook__title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.logbook {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+.logbook__day-report strong.day-report__country-name {
+  color: #1e90ff;
+}
+.logbook__day-report .day-report__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.logbook__day-report .day-report__title h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #f1863b;
+  margin-bottom: 1rem;
+}
+.logbook__day-report .day-report__title h4 {
+  font-size: 1.4rem;
+  color: #f1863b;
+  font-weight: normal;
+}
+.logbook__day-report .day-report__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  text-align: justify;
+}
+.logbook__day-report .day-report__content--no-images {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+.logbook__day-report .day-report__content--no-images p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+.logbook__day-report .day-report__content .day-report__text {
+  max-width: 40%;
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.logbook__day-report .day-report__content .day-report__text h5 {
+  margin-top: 2rem;
+  color: #141d2b;
+  text-decoration: underline;
+}
+.logbook__day-report .day-report__content .day-report__text p {
+  line-height: 1.5rem;
+}
+.logbook__day-report .day-report__content .day-report__text--small {
+  max-width: 20%;
+}
+.logbook__day-report .day-report__content .day-report__text--large {
+  min-width: 50%;
+}
+.logbook__day-report .day-report__content .day-report__text--large p {
+  font-size: 0.9rem;
+}
+.logbook__day-report .day-report__content .day-report__text--extra-large {
+  min-width: 65%;
+}
+.logbook__day-report .day-report__content .day-report__text--extra-extra-large {
+  min-width: 80%;
+}
+.logbook__day-report .day-report__content .day-report__images {
+  column-gap: 1rem;
+}
+.logbook__day-report .day-report__content .day-report__images .img-subtitled {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.logbook__day-report .day-report__content .day-report__images .img-subtitled .img-scale {
+  margin-bottom: 0.3rem;
+}
+.logbook__day-report .day-report__content .day-report__images .img-subtitled span {
+  font-size: 0.9rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+.logbook__day-report .day-report__content .day-report__images .img-scale {
+  margin-bottom: 1rem;
+}
+.logbook__day-report .day-report__content .day-report__images--small {
+  column-count: 1;
+}
+.logbook__day-report .day-report__content .day-report__images--small .img-subtitled, .logbook__day-report .day-report__content .day-report__images--small .img-scale {
+  margin-bottom: 2rem;
+}
+.logbook__day-report .day-report__content .day-report__images--medium {
+  column-count: 2;
+}
+.logbook__day-report .day-report__content .day-report__images--large {
+  column-count: 3;
+}
+.logbook__day-report:nth-child(3n) .day-report__content {
+  flex-flow: row-reverse;
+}
+.logbook__conclusion {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+.logbook__conclusion p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.logbook__conclusion span {
+  display: block;
+  margin-top: 3rem;
+  font-family: "Pinyon Script", cursive;
+  font-size: 2.5rem;
+}
+
+.hero--argentina {
+  background: rgba(0, 0, 0, 0.3) url("./../../public/assets/countries/argentina.jpg") no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
 }
 
 /* ---------- Themes --------- */

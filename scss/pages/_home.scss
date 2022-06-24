@@ -1,87 +1,7 @@
-.hero {
-    height: 100vh;
+.hero--home {
     background: rgba(0, 0, 0, 0.3) url('./../../public/assets/background_header.jpg') no-repeat;
     background-size: cover;
     background-blend-mode: darken;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 8rem;
-
-    &__quote {
-        //margin-bottom: 2rem;
-    
-
-        h1 {
-            font-style: italic;
-            text-align: center;
-            font-size: 4rem;
-            font-weight: 600;
-        }
-
-        h5 {
-            text-align: center;
-            font-size: 1.2rem;
-        }
-    }
-
-    &__btn {
-        position: relative;
-        align-self: center;
-        margin-bottom: 2rem;
-        background: none;
-        transition: padding 500ms ease;
-        color: $orange;
-
-        &:hover {
-            padding-left: 4rem;
-            transition: padding 500ms ease;
-
-            .btn-arrow {
-                opacity: 1;
-                transition: all 500ms ease;
-                transform: translate3d(20px, 0, 0);
-            }
-        }
-
-        .btn-arrow {
-            position: absolute;
-            font-size: 1.5rem;
-            opacity: 0;
-            left: 0;
-            transition: all 500ms ease;
-            margin-top: 1px;
-        }
-    }
-
-    &__location {
-        margin-bottom: 2rem;
-        span {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            transition: color .2s;
-
-            &:hover {
-                color: #ffa500;
-                transition: color .2s;
-            }
-
-            i {
-                font-size: .8rem;
-                padding: 1rem;
-                border-radius: 2rem;
-                background-color: $dark-blue;
-            }
-
-            a {
-                font-weight: 600;
-                transition: color .2s;
-            }
-        }
-    }
 }
 
 
@@ -92,6 +12,7 @@
     gap: 2rem;
     align-items: center;
     padding-bottom: 12rem;
+    text-align: right;
 
     &__content {
         display: flex;
@@ -114,15 +35,6 @@
             margin-bottom: 1rem;
         }
 
-        em {
-            font-weight: 600;
-        }
-
-        strong {
-            font-weight: 800;
-            color: $orange;
-        }
-
         span {
             margin-top: 1rem;
             align-self: center;
@@ -138,36 +50,27 @@
     }
 
     aside {
-        width: 100vw;
+        width: 100%;
     }
-}
 
+    &--prep {
+        text-align: left;
 
+        aside {
+            display: flex;
+            gap: 2rem;
 
-// About section
-.about {
-    text-align: right;
-}
+            img {
+                object-fit: contain;
+                max-width: calc(50% - 1rem);
+            }
 
-
-// Preparations section
-.preparations {
-    text-align: left;
-
-    aside {
-        display: flex;
-        gap: 2rem;
-
-        img {
-            object-fit: contain;
-            max-width: calc(50% - 1rem);
-        }
-
-        :nth-child(1) {
-            margin-bottom: 2rem;
-        }
-        :nth-child(2) {
-            margin-top: 2rem;
+            :nth-child(1) {
+                margin-bottom: 2rem;
+            }
+            :nth-child(2) {
+                margin-top: 2rem;
+            }
         }
     }
 }
