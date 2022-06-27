@@ -16,6 +16,10 @@ body {
     @include tablet-only {
         padding: 0 10vw;
     }
+
+    &--hero {
+        padding: 0 5vw;
+    }
 }
 
 .img-scale {

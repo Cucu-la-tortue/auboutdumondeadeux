@@ -8,16 +8,20 @@
         font-size: 1.4rem;
         font-weight: 700;
         text-align: center;
-        max-width: 240px;
+        max-width: 15rem;
         text-transform: uppercase;
-        width: 20rem;
+
+        @include mobile-only {
+            font-size: 1.2rem;
+            max-width: 13rem;
+        }
     }
 
     &__open-btn {
         display: none;
         position: absolute;
         right: 0;
-        top: 2.3rem;
+        top: 2.2rem;
         font-size: 1.8rem;
 
         @include tablet-only {

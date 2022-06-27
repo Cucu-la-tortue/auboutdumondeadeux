@@ -139,6 +139,9 @@ body {
     padding: 0 10vw;
   }
 }
+.container--hero {
+  padding: 0 5vw;
+}
 
 .img-scale {
   overflow: hidden;
@@ -226,15 +229,20 @@ strong {
   font-size: 1.4rem;
   font-weight: 700;
   text-align: center;
-  max-width: 240px;
+  max-width: 15rem;
   text-transform: uppercase;
-  width: 20rem;
+}
+@media screen and (max-width: 660px) {
+  .header h3 {
+    font-size: 1.2rem;
+    max-width: 13rem;
+  }
 }
 .header__open-btn {
   display: none;
   position: absolute;
   right: 0;
-  top: 2.3rem;
+  top: 2.2rem;
   font-size: 1.8rem;
 }
 @media screen and (max-width: 940px) {
@@ -463,7 +471,13 @@ strong {
 }
 .footer__copyrights {
   text-align: center;
-  padding: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 660px) {
+  .footer__copyrights {
+    font-size: 0.7rem;
+  }
 }
 
 .hero {
@@ -512,6 +526,12 @@ strong {
   padding-left: 4rem;
   transition: padding 500ms ease;
 }
+@media screen and (max-width: 660px) {
+  .hero__btn:hover {
+    padding: 0.9rem 1.8rem;
+    transition: none;
+  }
+}
 .hero__btn:hover .btn-arrow {
   opacity: 1;
   transition: all 500ms ease;
@@ -524,6 +544,11 @@ strong {
   left: 0;
   transition: all 500ms ease;
   margin-top: 1px;
+}
+@media screen and (max-width: 660px) {
+  .hero__btn .btn-arrow {
+    display: none;
+  }
 }
 .hero__scroll-arrow {
   position: relative;
@@ -1205,13 +1230,13 @@ strong {
 
 @media screen and (max-width: 660px) {
   #day-report__1 .day-report__images {
-    width: 230%;
+    width: 210%;
   }
 }
 
 @media screen and (max-width: 660px) {
   #day-report__2 .day-report__images {
-    width: 380%;
+    width: 330%;
   }
 }
 
@@ -1229,13 +1254,13 @@ strong {
 
 @media screen and (max-width: 660px) {
   #day-report__5 .day-report__images {
-    width: 200%;
+    width: 150%;
   }
 }
 
 @media screen and (max-width: 660px) {
   #day-report__6 .day-report__images {
-    width: 1080%;
+    width: 1030%;
   }
 }
 
@@ -1265,7 +1290,7 @@ strong {
 
 @media screen and (max-width: 660px) {
   #day-report__11 .day-report__images {
-    width: 1130%;
+    width: 980%;
   }
 }
 
@@ -1283,7 +1308,7 @@ strong {
 
 @media screen and (max-width: 660px) {
   #day-report__14 .day-report__images {
-    width: 1280%;
+    width: 1080%;
   }
 }
 
@@ -1301,37 +1326,37 @@ strong {
 
 @media screen and (max-width: 660px) {
   #day-report__18 .day-report__images {
-    width: 570%;
+    width: 350%;
   }
 }
 
 @media screen and (max-width: 660px) {
   #day-report__19 .day-report__images {
-    width: 740%;
+    width: 490%;
   }
 }
 
 @media screen and (max-width: 660px) {
   #day-report__20 .day-report__images {
-    width: 200%;
+    width: 150%;
   }
 }
 
 @media screen and (max-width: 660px) {
   #day-report__21 .day-report__images {
-    width: 710%;
+    width: 660%;
   }
 }
 
 @media screen and (max-width: 660px) {
   #day-report__22 .day-report__images {
-    width: 1570%;
+    width: 1320%;
   }
 }
 
 @media screen and (max-width: 660px) {
   #day-report__23 .day-report__images {
-    width: 1310%;
+    width: 1160%;
   }
 }
 
@@ -1343,19 +1368,19 @@ strong {
 
 @media screen and (max-width: 660px) {
   #day-report__27 .day-report__images {
-    width: 990%;
+    width: 690%;
   }
 }
 
 @media screen and (max-width: 660px) {
   #day-report__28 .day-report__images {
-    width: 720%;
+    width: 670%;
   }
 }
 
 @media screen and (max-width: 660px) {
   #day-report__29 .day-report__images {
-    width: 960%;
+    width: 860%;
   }
 }
 
@@ -1367,7 +1392,7 @@ strong {
 
 @media screen and (max-width: 660px) {
   #day-report__31 .day-report__images {
-    width: 570%;
+    width: 520%;
   }
 }
 

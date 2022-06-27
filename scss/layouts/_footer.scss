@@ -105,6 +105,11 @@
 
     &__copyrights {
         text-align: center;
-        padding: 1rem;
+        padding-bottom: 1rem;
+        font-size: .9rem;
+
+        @include mobile-only {
+            font-size: .7rem;
+        }
     }
 }

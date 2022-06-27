@@ -304,7 +304,7 @@
 
 // calcWidth(vertical, horizontal, gopro)
 #day-report__0 .day-report__images { @include mobile-only { width: calcWidth(2, 0, 0) } }
-#day-report__1 .day-report__images { @include mobile-only { width: calcWidth(2, 1, 0) } }   // Day 1
+#day-report__1 .day-report__images { @include mobile-only { width: calcWidth(3, 0, 0) } }   // Day 1
 #day-report__2 .day-report__images { @include mobile-only { width: calcWidth(1, 2, 1) } }   // Day 2
 #day-report__3 .day-report__images { @include mobile-only { width: calcWidth(7, 4, 0) } }   // ...
 #day-report__4 .day-report__images { @include mobile-only { width: calcWidth(0, 4, 0) } }
@@ -320,8 +320,8 @@
 #day-report__14 .day-report__images { @include mobile-only { width: calcWidth(7, 3, 4) } }
 #day-report__15 .day-report__images { @include mobile-only { width: calcWidth(2, 0, 0) } }
 #day-report__17 .day-report__images { @include mobile-only { width: calcWidth(1, 2, 0) } }
-#day-report__18 .day-report__images { @include mobile-only { width: calcWidth(0, 2, 3) } }
-#day-report__19 .day-report__images { @include mobile-only { width: calcWidth(3, 3, 2) } }
+#day-report__18 .day-report__images { @include mobile-only { width: calcWidth(5, 0, 0) } }
+#day-report__19 .day-report__images { @include mobile-only { width: calcWidth(7, 0, 0) } }
 #day-report__20 .day-report__images { @include mobile-only { width: calcWidth(1, 0, 1) } }
 #day-report__21 .day-report__images { @include mobile-only { width: calcWidth(7, 1, 1) } }
 #day-report__22 .day-report__images { @include mobile-only { width: calcWidth(8, 4, 5) } }
