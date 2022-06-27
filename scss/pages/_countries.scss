@@ -68,12 +68,20 @@
                 text-transform: uppercase;
                 color: $orange;
                 margin-bottom: 1rem;
+
+                @include mobile-only {
+                    font-size: 1.8rem;
+                }
             }
 
             h4 {
                 font-size: 1.4rem;
                 color: $orange;
                 font-weight: normal;
+
+                @include mobile-only {
+                    font-size: 1.3rem;
+                }
             }
         }
 
@@ -127,8 +135,10 @@
                 }
 
                 p {
-                    //margin-bottom: 1.5rem;
                     line-height: 1.5rem;
+                    @include mobile-only {
+                        font-size: .9rem;
+                    }
                 }
 
                 &--small {
@@ -148,10 +158,6 @@
 
                     p {
                         font-size: .9rem;
-
-                        @include mobile-only {
-                            font-size: 1rem;
-                        }
                     }
                 }
 

@@ -409,6 +409,9 @@ strong {
   grid-template-rows: repeat(2, 1fr);
   gap: 0.5rem;
 }
+.footer__container .footer__instagram .footer__gallery img {
+  object-fit: cover;
+}
 .footer__container .footer__follow {
   width: 30%;
 }
@@ -998,10 +1001,20 @@ strong {
   color: #f1863b;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 660px) {
+  .logbook__day-report .day-report__title h3 {
+    font-size: 1.8rem;
+  }
+}
 .logbook__day-report .day-report__title h4 {
   font-size: 1.4rem;
   color: #f1863b;
   font-weight: normal;
+}
+@media screen and (max-width: 660px) {
+  .logbook__day-report .day-report__title h4 {
+    font-size: 1.3rem;
+  }
 }
 .logbook__day-report .day-report__content {
   display: flex;
@@ -1056,6 +1069,11 @@ strong {
 .logbook__day-report .day-report__content .day-report__text p {
   line-height: 1.5rem;
 }
+@media screen and (max-width: 660px) {
+  .logbook__day-report .day-report__content .day-report__text p {
+    font-size: 0.9rem;
+  }
+}
 .logbook__day-report .day-report__content .day-report__text--small {
   max-width: 20%;
 }
@@ -1074,11 +1092,6 @@ strong {
 }
 .logbook__day-report .day-report__content .day-report__text--large p {
   font-size: 0.9rem;
-}
-@media screen and (max-width: 660px) {
-  .logbook__day-report .day-report__content .day-report__text--large p {
-    font-size: 1rem;
-  }
 }
 .logbook__day-report .day-report__content .day-report__text--extra-large {
   min-width: 65%;
