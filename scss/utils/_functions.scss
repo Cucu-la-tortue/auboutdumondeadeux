@@ -1,0 +1,4 @@
+@function calcWidth ($vertical_img, $horizontal_img, $gopro_img) {
+    $width: $vertical_img * $vertical + $horizontal_img * $horizontal + $gopro_img * $gopro;
+    @return $width
+}

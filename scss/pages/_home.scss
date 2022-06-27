@@ -2,6 +2,7 @@
     background: rgba(0, 0, 0, 0.3) url('./../../public/assets/background_header.jpg') no-repeat;
     background-size: cover;
     background-blend-mode: darken;
+    background-position: center;
 }
 
 
@@ -13,6 +14,12 @@
     align-items: center;
     padding-bottom: 12rem;
     text-align: right;
+
+    @include tablet-only {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        text-align: center;
+    }
 
     &__content {
         display: flex;
@@ -26,8 +33,6 @@
         }
 
         h2 {
-            font-size: 3rem;
-            line-height: 3rem;
             margin-bottom: 2rem;
         }
 
@@ -56,9 +61,18 @@
     &--prep {
         text-align: left;
 
+        @include tablet-only {
+            flex-flow: column;
+            text-align: center;
+        }
+
         aside {
             display: flex;
             gap: 2rem;
+
+            @include mobile-only {
+                display: none;
+            }
 
             img {
                 object-fit: contain;

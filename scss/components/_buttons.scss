@@ -11,6 +11,11 @@
     transition: background-color .2s;
     cursor: pointer;
 
+    @include mobile-only {
+        font-size: .9rem;
+        padding: .7rem 1.4rem;
+    }
+
     &:hover {
         color: $orange;
         background-color: transparent;

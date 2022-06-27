@@ -25,5 +25,17 @@ $bank: "\1F3E6";
 $phone: "\1F4DE";
 $house: "\1F3E0";
 $energy: "\1F4A1";
-
 $vaccine: "\1F489";
+
+
+// Breakpoints
+$breakpoints: (
+    tablet: 940px,
+    mobile: 660px, 
+);
+
+
+// Image percentages
+$horizontal: 90%;
+$vertical: 70%;
+$gopro: 130%;

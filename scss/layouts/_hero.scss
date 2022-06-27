@@ -12,11 +12,24 @@
             text-align: center;
             font-size: 4rem;
             font-weight: 600;
+            margin-bottom: 1rem;
+
+            @include tablet-only {
+                font-size: 3rem;
+            }
+
+            @include mobile-only {
+                font-size: 2rem;
+            }
         }
 
         h5 {
             text-align: center;
             font-size: 1.2rem;
+
+            @include mobile-only {
+                font-size: 1rem;
+            }
         }
     }
 
@@ -74,6 +87,11 @@
 
     &__location {
         margin-bottom: 2rem;
+
+        @include mobile-only {
+            font-size: .8rem;
+        }
+
         span {
             display: inline-flex;
             justify-content: center;
@@ -91,6 +109,10 @@
                 padding: 1rem;
                 border-radius: 2rem;
                 background-color: $dark-blue;
+
+                @include mobile-only {
+                    font-size: .6rem;
+                }
             }
 
             a {

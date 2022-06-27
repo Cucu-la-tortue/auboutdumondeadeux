@@ -32,12 +32,20 @@
 <body>
     <section class="hero hero--country hero--argentina container">
         <header class="header">
+            <h3 class="header__title">Au bout du monde à deux</h3>
+            <button class="header__open-btn" onclick="openNav()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <nav class="header__navbar">
-                <h3>Au bout du monde à deux</h3>
-                <li class="header__nav-link"><a href="./../../../index.html">Accueil</a></li>
-                <li class="header__nav-link"><a href="./../route.html">Itinéraire</a></li>
-                <li class="header__nav-link"><a href="./../prep.html">Nos préparatifs</a></li>
-                <li class="header__nav-link"><a href="./../challenges.html">Nos challenges</a></li>
+                <button class="header__close-btn" onclick="closeNav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="navbar__content">
+                    <li class="active header__nav-link"><a href="./../../../index.html">Accueil</a></li>
+                    <li class="header__nav-link"><a href="./../route.html">Itinéraire</a></li>
+                    <li class="header__nav-link"><a href="./../prep.html">Nos préparatifs</a></li>
+                    <li class="header__nav-link"><a href="./../challenges.html">Nos challenges</a></li>
+                </div>
             </nav>
             <div class="header__social">
                 <a href="https://www.instagram.com" target="blank"><i class='bx bxl-instagram'></i></a>
@@ -62,7 +70,7 @@
         <div id="map"></div>
     </section>
 
-    <h2 class="logbook__title">Journal de bord</h2>
+    <h2>Journal de bord</h2>
     <section class="logbook container">
         <!-- Day 0 -->
         <div class="logbook__day-report" id="day-report__0">
@@ -82,9 +90,11 @@
                         Entre impatience, excitation et un peu de stress, c'est après des aurevoirs difficiles avec nos proches que nous nous sommes envolés pour notre première destination : l'Argentine : <strong>Buenos Aires</strong>.
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day0_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day0_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day0_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day0_02.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day0_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day0_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day0_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day0_02.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,10 +120,12 @@
                         Retour sur la place en fin de journée pour boire une bonne bière argentine (Quilmes). La place s'anime petit à petit, des danseurs de tango se succèdent et laissent place en fin de soirée à un groupe de musique Reggae &#128131;
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day1_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day1_01.jpeg" alt="Photo"></a></div><span>Photo de la place principale de San Telmo « Plaza Dorrego » : petit marché</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day1_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day1_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day1_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day1_03.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day1_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day1_01.jpeg" alt="Photo"></a></div><span>Photo de la place principale de San Telmo « Plaza Dorrego » : petit marché</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day1_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day1_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day1_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day1_03.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -136,11 +148,13 @@
                         Nous nous dirigeons ensuite vers l'obélisque qui se situe sur l'avenue centrale « <strong>Avenida 9 de Julio</strong> ».
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day2_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day2_01.jpeg" alt="Photo"></a></div><span>La Plaza de Mayo</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day2_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day2_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day2_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day2_03.jpeg" alt="Photo"></a></div><span>La Casa Rosada</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day2_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day2_04.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day2_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day2_01.jpeg" alt="Photo"></a></div><span>La Plaza de Mayo</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day2_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day2_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day2_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day2_03.jpeg" alt="Photo"></a></div><span>La Casa Rosada</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day2_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day2_04.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -173,19 +187,20 @@
                         En fin d'après-midi, nous avons eu la chance de pouvoir assister à la « <strong>Féria de San Telmo : Los Antiquedades</strong> » : dans tout le quartier de San Telmo des dizaines et des dizaines de petits stands sont installés. C'est le grand marché des antiquaires.
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--large">
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_01.jpeg" alt="Photo"></a></div><span>La ruelle principale de la Boca « El Caminito » et ses rues colorées</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_03.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_04.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_05.jpeg" alt="Photo"></a></div><span>Le stade la Bombonera de Boca Juniors</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_06.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_07.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_08.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_09.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_10.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_11.jpeg" alt="Photo"></a></div>
-
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--large">
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_01.jpeg" alt="Photo"></a></div><span>La ruelle principale de la Boca « El Caminito » et ses rues colorées</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_03.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_04.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_05.jpeg" alt="Photo"></a></div><span>Le stade la Bombonera de Boca Juniors</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_06.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_07.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_08.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_09.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_10.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day3_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day3_11.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -226,11 +241,13 @@
                     </p>
 
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day4_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day4_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day4_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day4_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day4_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day4_03.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day4_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day4_04.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day4_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day4_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day4_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day4_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day4_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day4_03.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day4_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day4_04.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -276,9 +293,11 @@
                         Le taxi passe nous chercher à l'auberge demain matin à 7h alors au dodo !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--small">
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day5_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day5_01.jpeg" alt="Photo"></a></div><span>Dernière photo à Buenos Aires sur la place « 25 de Mayo » avant le départ pour la Patagonie.</span></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day5_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day5_02.jpeg" alt="Photo"></a></div><span>Le fameux « Cordero a la parrilla » dans un restaurant de El Calafate</span></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--small">
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day5_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day5_01.jpeg" alt="Photo"></a></div><span>Dernière photo à Buenos Aires sur la place « 25 de Mayo » avant le départ pour la Patagonie.</span></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day5_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day5_02.jpeg" alt="Photo"></a></div><span>Le fameux « Cordero a la parrilla » dans un restaurant de El Calafate</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -337,19 +356,21 @@
                         Et pour finir la journée en beauté, on décide de se faire plaisir sur le buget "Restauration" pour goûter la spécialité locale le « <strong>Cordero a la parrilla</strong> » : aucun regret, un délice !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_03.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_04.jpeg" alt="Photo"></a></div><span>On a même eu la chance de voir voler des condors au dessus du glacier !</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_05.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_06.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_07.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_08.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_09.jpeg" alt="Photo"></a></div><span>Sentiment de bonheur immense !</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_10.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_11.jpeg" alt="Photo"></a></div><span>Indescriptible comme on est heureux (et amoureux) de cette journée qui restera mémorable !</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_12.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_12.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_03.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_04.jpeg" alt="Photo"></a></div><span>On a même eu la chance de voir voler des condors au dessus du glacier !</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_05.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_06.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_07.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_08.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_09.jpeg" alt="Photo"></a></div><span>Sentiment de bonheur immense !</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_10.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_11.jpeg" alt="Photo"></a></div><span>Indescriptible comme on est heureux (et amoureux) de cette journée qui restera mémorable !</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day6_12.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day6_12.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -390,10 +411,12 @@
                         On y découvre aussi les fameux « <strong>maté</strong> ». Boisson adorée des argentins qui se boit à toute heure, toute la journée et partout ! On se note qu'il faut absolument goûter pendant notre séjour en Argentine.
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day7_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day7_01.jpeg" alt="Photo"></a></div><span>Tout est toujours très coloré sur les marchés mais aussi en général dans les villes. Cela rappelle souvent les couleurs des costumes traditionnels. Tout est généralement fait en laine de lama.</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day7_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day7_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day7_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day7_03.jpeg" alt="Photo"></a></div><span>Le « Maté »</span></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day7_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day7_01.jpeg" alt="Photo"></a></div><span>Tout est toujours très coloré sur les marchés mais aussi en général dans les villes. Cela rappelle souvent les couleurs des costumes traditionnels. Tout est généralement fait en laine de lama.</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day7_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day7_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day7_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day7_03.jpeg" alt="Photo"></a></div><span>Le « Maté »</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -418,9 +441,11 @@
                         Nos colocataires ont l'air plutôt sympa, mais on ne fera que les croiser, ils sont très discrets.
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day8_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day8_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day8_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day8_02.jpeg" alt="Photo"></a></div><span>Bonne nuit !</span></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day8_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day8_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day8_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day8_02.jpeg" alt="Photo"></a></div><span>Bonne nuit !</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -457,9 +482,11 @@
                         Nos colocataires ont dû se coucher aux alentours de 3h du matin, quand nous nous souhaitions nous lever tôt pour aller marcher ! Les joies des Auberges de Jeunesse !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day9_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day9_01.jpeg" alt="Photo"></a></div><span>Mirador "Los Condores" avant l'arrivée de la neige et de la pluie ! Beaucoup de vent!</span></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day9_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day9_02.jpeg" alt="Photo"></a></div><span>Mirador "Las Aguilas" de l'autre côté. Un mirador à perte de vue.</span></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day9_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day9_01.jpeg" alt="Photo"></a></div><span>Mirador "Los Condores" avant l'arrivée de la neige et de la pluie ! Beaucoup de vent!</span></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day9_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day9_02.jpeg" alt="Photo"></a></div><span>Mirador "Las Aguilas" de l'autre côté. Un mirador à perte de vue.</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -494,10 +521,12 @@
                         Nous espérons avoir beau temps demain car c'est notre dernier jour et nous voulons faire la randonnée "Laguna de los Tres" qui mène au pied du Mont Fitz Roy.
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day10_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day10_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day10_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day10_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day10_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day10_03.jpeg" alt="Photo"></a></div><span>Laguna de Capri : Sous les nuages mais le spectacle reste grandiose.</span></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day10_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day10_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day10_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day10_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day10_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day10_03.jpeg" alt="Photo"></a></div><span>Laguna de Capri : Sous les nuages mais le spectacle reste grandiose.</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -551,20 +580,22 @@
                         <strong>Journée splendide</strong> (encore & encore) !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--large">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_02.jpeg" alt="Photo"></a></div><span>1er mirador avec une vue sur la vallée</span></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_03.jpeg" alt="Photo"></a></div><span>Montée à travers la forêt</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_04.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_05.jpeg" alt="Photo"></a></div><span>Heureux comme des enfants</span></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_06.jpeg" alt="Photo"></a></div><span>Quand le soleil se lève enfin !</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_07.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_08.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_09.jpeg" alt="Photo"></a></div><span>Majestueux ! C'est fou cette sensation que l'on ressent ! On se sent tellement petit face à la nature</span></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_10.jpeg" alt="Photo"></a></div><span>On est les plus heureux. On est tellement émerveillés ! On passe notre temps à le contempler! (On oublie vite le dernier kilomètre!)</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_11.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_12.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_12.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_13.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_13.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--large">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_02.jpeg" alt="Photo"></a></div><span>1er mirador avec une vue sur la vallée</span></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_03.jpeg" alt="Photo"></a></div><span>Montée à travers la forêt</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_04.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_05.jpeg" alt="Photo"></a></div><span>Heureux comme des enfants</span></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_06.jpeg" alt="Photo"></a></div><span>Quand le soleil se lève enfin !</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_07.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_08.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_09.jpeg" alt="Photo"></a></div><span>Majestueux ! C'est fou cette sensation que l'on ressent ! On se sent tellement petit face à la nature</span></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_10.jpeg" alt="Photo"></a></div><span>On est les plus heureux. On est tellement émerveillés ! On passe notre temps à le contempler! (On oublie vite le dernier kilomètre!)</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_11.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_12.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_12.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day11_13.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day11_13.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -588,8 +619,10 @@
                         Nuit à l'aéroport donc !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--small">
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day12_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day12_01.jpeg" alt="Photo"></a></div><span>Heureusement Mcdo est notre ami même à 1h du matin !</span></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--small">
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day12_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day12_01.jpeg" alt="Photo"></a></div><span>Heureusement Mcdo est notre ami même à 1h du matin !</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -615,8 +648,10 @@
                         Nous sommes ressortis le soir pour aller acheter nos tickets de bus pour le lendemain pour le parc d'Iguazu . On a hâte !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--small">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day13_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day13_01.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--small">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day13_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day13_01.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -667,21 +702,23 @@
                         On est quand même les plus heureux de cette journée : <strong>quelle journée</strong> !!!
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--large">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_03.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_04.jpeg" alt="Photo"></a></div><span>Est-ce que l'on vit notre meilleure vie ? Oui clairement je crois!</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_05.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_06.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_07.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_08.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_09.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_10.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_11.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_12.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_12.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_13.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_13.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_14.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_14.jpeg" alt="Photo"></a></div><span>On prend une douche aux chutes d'Iguazu !</span></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--large">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_03.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_04.jpeg" alt="Photo"></a></div><span>Est-ce que l'on vit notre meilleure vie ? Oui clairement je crois!</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_05.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_06.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_07.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_08.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_09.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_10.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_11.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_12.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_12.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_13.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_13.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day14_14.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day14_14.jpeg" alt="Photo"></a></div><span>On prend une douche aux chutes d'Iguazu !</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -729,9 +766,11 @@
                         Il nous tarde aussi de quitter la ville de Puerto Iguazu, qui ne nous plait absolument pas !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--small">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day15_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day15_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day15_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day15_02.jpeg" alt="Photo"></a></div><span>En bas des chutes ! Éblouissant !</span></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--small">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day15_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day15_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day15_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day15_02.jpeg" alt="Photo"></a></div><span>En bas des chutes ! Éblouissant !</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -790,10 +829,12 @@
                         La journée se passe tranquillement et ça fait du bien de se poser un peu !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day17_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day17_03.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day17_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day17_01.jpeg" alt="Photo"></a></div><span>BARILOCHE sur le lac Nahuei Huapi</span></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day17_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day17_02.jpeg" alt="Photo"></a></div><span>Place principale de Bariloche</span></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day17_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day17_03.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day17_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day17_01.jpeg" alt="Photo"></a></div><span>BARILOCHE sur le lac Nahuei Huapi</span></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day17_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day17_02.jpeg" alt="Photo"></a></div><span>Place principale de Bariloche</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -866,12 +907,14 @@
                         Demain encore une belle journée nous attend.
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--small">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day18_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day18_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day18_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day18_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day18_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day18_03.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day18_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day18_04.jpeg" alt="Photo"></a></div><span>On vit un peu (beaucoup) notre meilleure vie !</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day18_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day18_05.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--small">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day18_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day18_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day18_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day18_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day18_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day18_03.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day18_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day18_04.jpeg" alt="Photo"></a></div><span>On vit un peu (beaucoup) notre meilleure vie !</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day18_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day18_05.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -926,15 +969,17 @@
                         Au menu : Fondue Savoyarde pour notre dernière journée à Bariloche !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_03.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_04.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_05.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_06.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_07.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_08.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_03.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_04.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_05.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_06.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_07.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day19_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day19_08.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -966,9 +1011,11 @@
                         Il est 22h00 quand nous y arrivons. Nous décidons de ressortir manger rapidement : <strong>Pates et UNO</strong> au programme !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day20_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day20_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day20_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day20_02.jpeg" alt="Photo"></a></div><span>Bye Bye Bariloche !</span></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day20_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day20_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day20_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day20_02.jpeg" alt="Photo"></a></div><span>Bye Bye Bariloche !</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1011,16 +1058,18 @@
                         On finit la journée sur une <strong>note positive</strong> !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--large">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_03.jpeg" alt="Photo"></a></div><span>Plaza España</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_04.jpeg" alt="Photo"></a></div><span>Le fameux petit-déjeuner</span></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_05.jpeg" alt="Photo"></a></div><span>Place principale de Mendoza " Plaza Independencia"</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_08.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_07.jpeg" alt="Photo"></a></div><span>Plaza San Martin</span></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_06.jpeg" alt="Photo"></a></div><span>Plaza Italia</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_09.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--large">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_03.jpeg" alt="Photo"></a></div><span>Plaza España</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_04.jpeg" alt="Photo"></a></div><span>Le fameux petit-déjeuner</span></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_05.jpeg" alt="Photo"></a></div><span>Place principale de Mendoza " Plaza Independencia"</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_08.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_07.jpeg" alt="Photo"></a></div><span>Plaza San Martin</span></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_06.jpeg" alt="Photo"></a></div><span>Plaza Italia</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day21_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day21_09.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1099,24 +1148,26 @@
                         Direction le dodo surtout que demain une autre grosse journée nous attend. On a hâte !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--large">
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_01.jpeg" alt="Photo"></a></div><span>En arrivant à Maipù</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_03.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_04.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_05.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_07.jpeg" alt="Photo"></a></div><span>Sur la route des vins</span></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_08.jpeg" alt="Photo"></a></div><span>Santé</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_09.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_10.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_11.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_12.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_12.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_13.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_13.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_14.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_14.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_15.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_15.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_16.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_16.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_17.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_17.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_06.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--large">
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_01.jpeg" alt="Photo"></a></div><span>En arrivant à Maipù</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_03.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_04.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_05.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_07.jpeg" alt="Photo"></a></div><span>Sur la route des vins</span></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_08.jpeg" alt="Photo"></a></div><span>Santé</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_09.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_10.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_11.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_12.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_12.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_13.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_13.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_14.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_14.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_15.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_15.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_16.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_16.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_17.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_17.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day22_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day22_06.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1182,23 +1233,24 @@
                         Quelle journée... <strong>inoubliable et mémorable</strong> !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--large">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_03.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_04.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_05.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_06.jpeg" alt="Photo"></a></div><span>Quentin aura « <strong>Pirata</strong> » : un cheval un peu foufou.</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_07.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_08.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_09.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_10.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_11.jpeg" alt="Photo"></a></div><span>Charlotte aura « <strong>Tranquilto</strong> »</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_12.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_12.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_13.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_13.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_14.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_14.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_15.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_15.jpeg" alt="Photo"></a></div>
-
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--large">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_03.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_04.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_05.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_06.jpeg" alt="Photo"></a></div><span>Quentin aura « <strong>Pirata</strong> » : un cheval un peu foufou.</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_07.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_08.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_09.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_10.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_11.jpeg" alt="Photo"></a></div><span>Charlotte aura « <strong>Tranquilto</strong> »</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_12.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_12.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_13.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_13.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_14.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_14.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day23_15.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day23_15.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1315,16 +1367,18 @@
                         Du coup, une fois le tour en voiture terminé, on regagne tranquillement notre petit village <strong>Tilcara</strong> pour y finir la soirée.
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_01.jpeg" alt="Photo"></a></div><span>Entrée du village de « Purmamarca »</span></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_02.jpeg" alt="Photo"></a></div><span>Les petites rues et les marchés sont toujours très colorés... On adore !</span></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_03.jpeg" alt="Photo"></a></div><span>Les couleurs sont magnifiques, on se croirait en plein far west !</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_04.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_05.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_06.jpeg" alt="Photo"></a></div><span>C'est parti pour le « Paseo de los colores »</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_07.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_08.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_09.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_01.jpeg" alt="Photo"></a></div><span>Entrée du village de « Purmamarca »</span></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_02.jpeg" alt="Photo"></a></div><span>Les petites rues et les marchés sont toujours très colorés... On adore !</span></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_03.jpeg" alt="Photo"></a></div><span>Les couleurs sont magnifiques, on se croirait en plein far west !</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_04.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_05.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_06.jpeg" alt="Photo"></a></div><span>C'est parti pour le « Paseo de los colores »</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_07.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_08.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day26_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day26_09.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1381,16 +1435,18 @@
                         Et bien sûr <strong>Empanadas</strong> !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_02.jpeg" alt="Photo"></a></div><span>Tortillas entre 2 photos</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_03.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_09.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_05.jpeg" alt="Photo"></a></div><span>Entrée des Salinas Grandes</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_04.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_06.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_08.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_07.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_02.jpeg" alt="Photo"></a></div><span>Tortillas entre 2 photos</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_03.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_09.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_05.jpeg" alt="Photo"></a></div><span>Entrée des Salinas Grandes</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_04.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_06.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_08.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day27_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day27_07.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1446,15 +1502,17 @@
                         Puis il l'heure d'aller se coucher pour être en forme demain !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_01.jpeg" alt="Photo"></a></div><span>Sur la route du mirador</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_03.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_04.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_05.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_06.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_07.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_08.jpeg" alt="Photo"></a></div><span>Place centrale d'Humahuaca</span></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_01.jpeg" alt="Photo"></a></div><span>Sur la route du mirador</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_03.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_04.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_05.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_06.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_07.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day28_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day28_08.jpeg" alt="Photo"></a></div><span>Place centrale d'Humahuaca</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1522,19 +1580,21 @@
                         On rentre épuisés par la journée !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--large">
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_01.jpeg" alt="Photo"></a></div><span>Montée du Cerro</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_03.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_04.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_05.jpeg" alt="Photo"></a></div><span>Arrivée au Cerro</span></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_06.jpeg" alt="Photo"></a></div><span>Mini rando vers la cascade</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_07.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_08.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_09.jpeg" alt="Photo"></a></div><span>Vue du Cerro sur Tilcara et les alentours</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_10.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_11.jpeg" alt="Photo"></a></div>
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_12.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_12.jpeg" alt="Photo"></a></div><span>Cathédrale centrale de Salta</span></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--large">
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_01.jpeg" alt="Photo"></a></div><span>Montée du Cerro</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_03.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_04.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_05.jpeg" alt="Photo"></a></div><span>Arrivée au Cerro</span></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_06.jpeg" alt="Photo"></a></div><span>Mini rando vers la cascade</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_07.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_08.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_08.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_09.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_09.jpeg" alt="Photo"></a></div><span>Vue du Cerro sur Tilcara et les alentours</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_10.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_10.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_11.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_11.jpeg" alt="Photo"></a></div>
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day29_12.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day29_12.jpeg" alt="Photo"></a></div><span>Cathédrale centrale de Salta</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1558,9 +1618,11 @@
                         Vous l'aurez compris, aujourd'hui repos !
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--medium">
-                    <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day30_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day30_01.jpeg" alt="Photo"></a></div><span>Trop heureux &#128514;</span></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day30_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day30_02.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--medium">
+                        <div class="img-subtitled"><div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day30_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day30_01.jpeg" alt="Photo"></a></div><span>Trop heureux &#128514;</span></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day30_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day30_02.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1596,14 +1658,16 @@
                         On se repasse un peu notre <strong>premier mois</strong> de tour du monde.
                     </p>
                 </div>
-                <div class="day-report__images day-report__images--large">
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_01.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_02.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_03.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_04.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_05.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_06.jpeg" alt="Photo"></a></div>
-                    <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_07.jpeg" alt="Photo"></a></div>
+                <div class="day-report__img-container">
+                    <div class="day-report__images day-report__images--large">
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_01.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_01.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_02.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_02.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_03.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_03.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_04.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_04.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_05.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_05.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_06.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_06.jpeg" alt="Photo"></a></div>
+                        <div class="img-scale"><a href="./../../assets/blog/argentina/argentina_day31_07.jpeg"><img loading="lazy" src="./../../assets/blog/argentina/argentina_day31_07.jpeg" alt="Photo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>

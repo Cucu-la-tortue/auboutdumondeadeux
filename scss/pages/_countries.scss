@@ -1,6 +1,14 @@
 .hero--country {
     h1 {
         font-size: 5rem;
+        
+        @include tablet-only {
+            font-size: 4rem;
+        }
+
+        @include mobile-only {
+            font-size: 3.5rem;
+        }
     }
 }
 
@@ -8,8 +16,6 @@
     margin-bottom: 8rem;
 
     h2 {
-        font-size: 3rem;
-        text-align: center;
         margin-bottom: 2rem;
     }
 
@@ -41,11 +47,6 @@
     }
 }
 
-.logbook__title {
-    font-size: 3rem;
-    text-align: center;
-}
-
 .logbook {
     display: flex;
     flex-direction: column;
@@ -57,6 +58,7 @@
         strong.day-report__country-name {
             color: $country-name-color;
         }
+
         .day-report__title {
             text-align: center;
             margin-bottom: 2rem;
@@ -78,14 +80,21 @@
         .day-report__content {
             display: flex;
             justify-content: space-between;
-            //align-items: center;
             gap: 3rem;
             text-align: justify;
+
+            @include mobile-only {
+                flex-flow: column;
+            }
 
             &--no-images {
                 display: block;
                 width: 80%;
                 margin: auto;
+
+                @include mobile-only {
+                    width: 100%;
+                }
 
                 p {
                     margin-bottom: 1.5rem;
@@ -102,6 +111,15 @@
                 justify-content: space-evenly;
                 gap: 1rem;
 
+                @include tablet-only {
+                    min-width: 40%;
+                    max-width: 50%;
+                }
+
+                @include mobile-only {
+                    min-width: 100%;
+                }
+
                 h5 {
                     margin-top: 2rem;
                     color: $dark-blue;
@@ -115,45 +133,87 @@
 
                 &--small {
                     max-width: 20%;
+
+                    @include mobile-only {
+                        min-width: 100%;
+                    }
                 }
 
                 &--large {
                     min-width: 50%;
 
+                    @include mobile-only {
+                        min-width: 100%;
+                    }
+
                     p {
                         font-size: .9rem;
+
+                        @include mobile-only {
+                            font-size: 1rem;
+                        }
                     }
                 }
 
                 &--extra-large {
                     min-width: 65%;
+                    @include mobile-only {
+                        min-width: 100%;
+                    }
                 }
 
                 &--extra-extra-large {
                     min-width: 80%;
+                    @include mobile-only {
+                        min-width: 100%;
+                    }
+                }
+            }
+
+            .day-report__img-container {
+                @include mobile-only {
+                    overflow-x: scroll;
                 }
             }
 
             .day-report__images {
                 column-gap: 1rem;
 
+                @include mobile-only {
+                    display: flex;
+                    margin-bottom: 1rem;
+                }
+
                 .img-subtitled {
                     text-align: center;
                     margin-bottom: 1rem;
+                    @include mobile-only {
+                        margin: 0;
+                    }
 
                     .img-scale {
                         margin-bottom: .3rem;
+                        @include mobile-only {
+                            margin: 0;
+                        }
                     }
 
                     span {
                         font-size: .9rem;
                         font-style: italic;
                         text-decoration: underline;
+                        @include mobile-only {
+                            display: none;
+                        }
                     }
                 }
 
                 .img-scale {
-                    margin-bottom: 1rem;
+                    margin-bottom: .8rem;
+                    @include mobile-only {
+                        margin: 0;
+                        height: 100%;
+                    }
                 }
 
                 &--small {
@@ -161,15 +221,26 @@
 
                     .img-subtitled, .img-scale {
                         margin-bottom: 2rem;
+                        @include mobile-only {
+                            margin: 0;
+                        }
                     }
                 }
 
                 &--medium {
                     column-count: 2;
+
+                    @include tablet-only {
+                        column-count: 1;
+                    }
                 }
 
                 &--large {
                     column-count: 3;
+
+                    @include tablet-only {
+                        column-count: 1;
+                    }
                 }
             }
         }
@@ -177,6 +248,10 @@
         &:nth-child(3n) {
             .day-report__content {
                 flex-flow: row-reverse;
+
+                @include mobile-only {
+                    flex-flow: column;
+                }
             }
         }
     }
@@ -186,12 +261,20 @@
         width: 75%;
         margin: auto;
 
+        @include mobile-only {
+            width: 90%;
+        }
+
         p {
             font-size: 1.2rem;
             line-height: 2rem;
             font-weight: 500;
             font-style: italic;
             margin-bottom: 1rem;
+
+            @include mobile-only {
+                font-size: 1.1rem;
+            }
         }
 
         span {
@@ -199,6 +282,10 @@
             margin-top: 3rem;
             font-family: $font-quote;
             font-size: 2.5rem;
+
+            @include mobile-only {
+                font-size: 2rem;
+            }
         }
 
     }
@@ -207,8 +294,41 @@
 
 
 
+// Argentina
 .hero--argentina {
     background: rgba(0, 0, 0, 0.3) url('./../../public/assets/countries/argentina.jpg') no-repeat;
     background-size: cover;
     background-blend-mode: darken;
+    background-position: center;
 }
+
+// calcWidth(vertical, horizontal, gopro)
+#day-report__0 .day-report__images { @include mobile-only { width: calcWidth(2, 0, 0) } }
+#day-report__1 .day-report__images { @include mobile-only { width: calcWidth(2, 1, 0) } }   // Day 1
+#day-report__2 .day-report__images { @include mobile-only { width: calcWidth(1, 2, 1) } }   // Day 2
+#day-report__3 .day-report__images { @include mobile-only { width: calcWidth(7, 4, 0) } }   // ...
+#day-report__4 .day-report__images { @include mobile-only { width: calcWidth(0, 4, 0) } }
+#day-report__5 .day-report__images { @include mobile-only { width: calcWidth(1, 0, 1) } }
+#day-report__6 .day-report__images { @include mobile-only { width: calcWidth(2, 9, 1) } }
+#day-report__7 .day-report__images { @include mobile-only { width: calcWidth(3, 0, 0) } }
+#day-report__8 .day-report__images { @include mobile-only { width: calcWidth(1, 1, 0) } }
+#day-report__9 .day-report__images { @include mobile-only { width: calcWidth(2, 0, 0) } }
+#day-report__10 .day-report__images { @include mobile-only { width: calcWidth(2, 1, 0) } }
+#day-report__11 .day-report__images { @include mobile-only { width: calcWidth(8, 2, 3) } }
+#day-report__12 .day-report__images { @include mobile-only { width: calcWidth(1, 0, 0) } }
+#day-report__13 .day-report__images { @include mobile-only { width: calcWidth(1, 0, 0) } }
+#day-report__14 .day-report__images { @include mobile-only { width: calcWidth(7, 3, 4) } }
+#day-report__15 .day-report__images { @include mobile-only { width: calcWidth(2, 0, 0) } }
+#day-report__17 .day-report__images { @include mobile-only { width: calcWidth(1, 2, 0) } }
+#day-report__18 .day-report__images { @include mobile-only { width: calcWidth(0, 2, 3) } }
+#day-report__19 .day-report__images { @include mobile-only { width: calcWidth(3, 3, 2) } }
+#day-report__20 .day-report__images { @include mobile-only { width: calcWidth(1, 0, 1) } }
+#day-report__21 .day-report__images { @include mobile-only { width: calcWidth(7, 1, 1) } }
+#day-report__22 .day-report__images { @include mobile-only { width: calcWidth(8, 4, 5) } }
+#day-report__23 .day-report__images { @include mobile-only { width: calcWidth(8, 4, 3) } }
+#day-report__26 .day-report__images { @include mobile-only { width: calcWidth(4, 5, 0) } }
+#day-report__27 .day-report__images { @include mobile-only { width: calcWidth(3, 0, 6) } }
+#day-report__28 .day-report__images { @include mobile-only { width: calcWidth(2, 5, 1) } }
+#day-report__29 .day-report__images { @include mobile-only { width: calcWidth(10, 0, 2) } }
+#day-report__30 .day-report__images { @include mobile-only { width: calcWidth(2, 0, 0) } }
+#day-report__31 .day-report__images { @include mobile-only { width: calcWidth(5, 1, 1) } }

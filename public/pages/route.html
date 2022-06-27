@@ -32,12 +32,20 @@
 <body>
     <section class="hero hero--route container">
         <header class="header">
+            <h3 class="header__title">Au bout du monde à deux</h3>
+            <button class="header__open-btn" onclick="openNav()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <nav class="header__navbar">
-                <h3>Au bout du monde à deux</h3>
-                <li class="header__nav-link"><a href="./../../index.html">Accueil</a></li>
-                <li class="active header__nav-link"><a href="route.html">Itinéraire</a></li>
-                <li class="header__nav-link"><a href="prep.html">Nos préparatifs</a></li>
-                <li class="header__nav-link"><a href="challenges.html">Nos challenges</a></li>
+                <button class="header__close-btn" onclick="closeNav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="navbar__content">
+                    <li class="header__nav-link"><a href="./../../index.html">Accueil</a></li>
+                    <li class="active header__nav-link"><a href="./route.html">Itinéraire</a></li>
+                    <li class="header__nav-link"><a href="./prep.html">Nos préparatifs</a></li>
+                    <li class="header__nav-link"><a href="./challenges.html">Nos challenges</a></li>
+                </div>
             </nav>
             <div class="header__social">
                 <a href="https://www.instagram.com" target="blank"><i class='bx bxl-instagram'></i></a>
@@ -308,12 +316,13 @@
         </div>
         <p class="footer__copyrights">
             Copyright &copy;2022 Tous droits réservés | réalisé par Cyprien Cursoux<br>
-            <a href="https://www.flaticon.com/free-icons/mexico" target="blank" title="mexico icons">Maxico, Argentina, Chile, Bolivia, Australia icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/mexico" target="blank" title="mexico icons">Flag icons created by Freepik - Flaticon</a>
         </p>
     </footer>
 
 
     <!-- Scripts -->
+    <script src="./../js/world.js"></script>
     <script src="./../js/main.js"></script>
 </body>
 </html>
