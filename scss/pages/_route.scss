@@ -62,6 +62,7 @@
 
                 li {
                     display: flex;
+                    align-items: center;
 
                     img {
                         width: 32px;
@@ -74,6 +75,18 @@
                 transition: color .3s;
                 font-weight: 600;
                 font-size: 1.3rem;
+                @include mobile-only {
+                    display: inline-flex;
+                    align-items: center;
+                }
+            }
+
+            i {
+                display: none;
+                @include mobile-only {
+                    display: initial;
+                    margin-left: 1rem;
+                }
             }
 
             a.current {
